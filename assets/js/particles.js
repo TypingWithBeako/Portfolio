@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
       particles: {
         number: {
           value: 150,
-          density: { enable: true, value_area: 800 }
+          density: { enable: true, value_area: 1000 }
         },
         color: { value: "#ffffff" },
         shape: {
@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
           value: 3,
           random: true
         },
+        smooth: true,
         move: {
           enable: true,
           speed: 1,
