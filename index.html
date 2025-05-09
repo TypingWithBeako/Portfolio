@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="assets/css/meyawo.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.3.7/dist/photoswipe.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
@@ -50,8 +51,8 @@
                 <span class="down" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="900">I am Nguyễn Thái Tuấn</span>
             </h1>
             <p class="header-subtitle" data-aos="fade" data-aos-delay="2700" >FRONTEND WEB DEVELOPER</p>            
-            <a href="#portfolio" data-aos="fade" data-aos-delay="2700">
-                <button class="btn btn-primary">
+            <a href="#portfolio">
+                <button data-aos="fade-right" data-aos-delay="2700" class="btn btn-primary">
                     Visit my works
                 </button>
             </a>
@@ -64,7 +65,7 @@
         <div class="container text-center">
             <!-- about wrapper -->
             <div class="about" data-aos="fade-up">
-                <div class="about-img-holder">
+                <div style="margin-top: 100px;" class="about-img-holder">
                     <img src="assets/imgs/d9cdc6ed-cfc7-4dcd-a758-26a311cafa38.jpg" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="about-caption">
@@ -85,48 +86,54 @@
         </div><!-- end of container -->
     </section> <!-- end of about section -->
 
-
     <!-- portfolio section -->
     <section class="section" id="portfolio">
         <div class="container text-center" data-aos="fade-up">
             <p class="section-subtitle" >What I Did ?</p>
             <h6 class="section-title mb-6">Portfolio</h6>
-            <!-- row -->
-            <div class="row" data-aos="fade-up">
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>                         
-                        </span>                     
-                    </a>
+            <!-- row for the main project -->
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="col-lg-10 col-md-12">
+                    <div class="portfolio-card-horizontal">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img 
+                                    src="assets/imgs/Screenshot 2025-05-09 131048.png" 
+                                    class="portfolio-horizontal-img" 
+                                    alt="Re:Zero Media Player"
+                                    id="rezero-screenshot"
+                                    style="cursor: zoom-in; margin: 20px"
+                                >
+                            </div>
+                            <div class="col-md-6 portfolio-horizontal-content">
+                                <h4 class="portfolio-title">Re:Zero - Offline Media Player</h4>
+                                <p class="font-weight-normal category-text">Category: Web Application / Passion Project</p>
+                                <p class="project-description-short">
+                                    A fully offline-capable PWA media player for Re:Zero Openings, Endings, and OSTs, built from scratch with Vanilla JavaScript. Features seamless transitions, MediaSession API integration, and a custom UI.
+                                </p>
+                                <div class="tech-tags">
+                                    <span class="badge badge-pill badge-primary">Vanilla JS</span>
+                                    <span class="badge badge-pill badge-primary">HTML5</span>
+                                    <span class="badge badge-pill badge-primary">CSS3</span>
+                                    <span class="badge badge-pill badge-primary">PWA</span>
+                                    <span class="badge badge-pill badge-primary">Service Workers</span>
+                                    <span class="badge badge-pill badge-primary">MediaSession API</span>
+                                </div>
+                                <div class="portfolio-buttons mt-3">
+                                    <a href="https://re-zero-en.pages.dev" target="_blank" class="btn btn-outline-primary btn-sm">Live Demo (EN)</a>
+                                    <a href="https://re-zero.pages.dev" target="_blank" class="btn btn-outline-primary btn-sm ml-2">Live Demo (VI)</a>
+                                    <a href="https://github.com/TypingWithBeako/typingwithb" target="_blank" class="btn btn-outline-dark btn-sm ml-2">GitHub Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>                         
-                        </span>                         
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-            </div><!-- end of row -->
+            </div><!-- end of main project row -->
+
+            <!-- You can add a subtitle here if you plan to add more, smaller projects later -->
+            <!-- <h6 class="section-title mt-5 mb-4">Other Projects</h6> -->
+            <!-- Add other smaller project cards here if needed -->
+
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
 
@@ -140,8 +147,10 @@
                     <h6 class="title text-light" >Want to work with me?</h6>
                     <p class="m-0 text-light">Always feel free to Contact & Hire me</p>
                 </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="btn btn-lg my-font btn-light rounded" data-aos="fade">Hire Me</button>
+                <div class="col-sm offset-sm-2 offset-md-4">
+                    <a href="https://www.linkedin.com/in/beakonumberone" target="_blank">
+                        <button class="btn btn-lg my-font btn-light rounded" data-aos="fade">Hire Me</button>
+                    </a>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -203,5 +212,28 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/animateonscroll.js"></script>
     <script src="assets/js/form-handler.js"> </script>
+    <!-- PhotoSwipe template -->
+<div id="pswp-container"></div>
+
+<script type="module">
+    import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.7/dist/photoswipe.esm.js';
+    
+    // Set up the on-site viewer for your Re:Zero screenshot
+    document.getElementById('rezero-screenshot').addEventListener('click', function() {
+      
+      // Open the on-site viewer with your 4K image
+      const pswp = new PhotoSwipe({
+        dataSource: [{
+          src: 'assets/imgs/Screenshot 2025-05-09 131048.png',
+          width: 3840,  // Width of your 4K image
+          height: 2160, // Height of your 4K image
+          alt: 'Re:Zero Media Player'
+        }],
+        appendToEl: document.getElementById('pswp-container'),
+        showHideAnimationType: 'zoom',
+      });
+      pswp.init();
+    });
+  </script>
 </body> 
 </html>
