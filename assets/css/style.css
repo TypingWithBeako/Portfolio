@@ -110,7 +110,7 @@ html {
 /* Responsive adjustments */
 @media (max-width: 767px) {
     .portfolio-horizontal-content {
-        text-align: center; /* Center text on smaller screens */
+        text-align: justify; /* Center text on smaller screens */
     }
     .portfolio-buttons .btn {
         display: block;
@@ -119,10 +119,13 @@ html {
         margin-left: 0 !important;
     }
     .portfolio-buttons .btn:last-child {
-        margin-bottom: 0;
+        margin-bottom: 0px;
     }
+    
 }
 
-/* ...existing code... */
-
-
+@media (min-width: 768px){
+  .portfolio-card-horizontal img{
+    margin: 20px;
+  }
+}

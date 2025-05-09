@@ -53,7 +53,7 @@
             <p class="header-subtitle" data-aos="fade" data-aos-delay="2700" >FRONTEND WEB DEVELOPER</p>            
             <a href="#portfolio">
                 <button data-aos="fade-right" data-aos-delay="2700" class="btn btn-primary">
-                    Visit my works
+                    Visit my projects
                 </button>
             </a>
         </div>              
@@ -66,7 +66,7 @@
             <!-- about wrapper -->
             <div class="about" data-aos="fade-up">
                 <div style="margin-top: 100px;" class="about-img-holder">
-                    <img src="assets/imgs/d9cdc6ed-cfc7-4dcd-a758-26a311cafa38.jpg" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="assets/imgs/Me picture.jpg" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
@@ -76,7 +76,7 @@
                         <br><br>My approach focuses on creating performant applications that deliver exceptional user experiences, regardless of the tools used. While my flagship project demonstrates what's possible with vanilla JS, I'm equally excited to apply these core principles when working with modern frameworks and libraries.
                     </p>
                     <br>
-                    <div class="social-links text-left m-auto ml-sm-auto">
+                    <div class="social-links text-center m-auto ml-sm-auto text-md-left">
                         <a href="https://www.facebook.com/BeakoNumberOne" class="link" target="_blank"><i class="ti-facebook"></i></a>
                         <a href="https://github.com/TypingWithBeako" class="link" target="_blank"><i class="ti-github"></i></a>
                         <a href="https://www.linkedin.com/in/beakonumberone" class="link" target="_blank"><i class="ti-linkedin"></i></a>
@@ -98,15 +98,15 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <img 
-                                    src="assets/imgs/Screenshot 2025-05-09 131048.png" 
+                                    src="assets/imgs/Re_Zero_Screenshot.webp" 
                                     class="portfolio-horizontal-img" 
                                     alt="Re:Zero Media Player"
                                     id="rezero-screenshot"
-                                    style="cursor: zoom-in; margin: 20px"
+                                    style="cursor: zoom-in;"
                                 >
                             </div>
                             <div class="col-md-6 portfolio-horizontal-content">
-                                <h4 class="portfolio-title">Re:Zero - Offline Media Player</h4>
+                                <h4 class="portfolio-title">Re:Zero Media Experience</h4>
                                 <p class="font-weight-normal category-text">Category: Web Application / Passion Project</p>
                                 <p class="project-description-short">
                                     A fully offline-capable PWA media player for Re:Zero Openings, Endings, and OSTs, built from scratch with Vanilla JavaScript. Features seamless transitions, MediaSession API integration, and a custom UI.
@@ -122,7 +122,7 @@
                                 <div class="portfolio-buttons mt-3">
                                     <a href="https://re-zero-en.pages.dev" target="_blank" class="btn btn-outline-primary btn-sm">Live Demo (EN)</a>
                                     <a href="https://re-zero.pages.dev" target="_blank" class="btn btn-outline-primary btn-sm ml-2">Live Demo (VI)</a>
-                                    <a href="https://github.com/TypingWithBeako/typingwithb" target="_blank" class="btn btn-outline-dark btn-sm ml-2">GitHub Repo</a>
+                                    <a href="https://github.com/TypingWithBeako/typingwith" target="_blank" class="btn btn-outline-dark btn-sm ml-2">GitHub Repo</a>
                                 </div>
                             </div>
                         </div>
@@ -138,18 +138,18 @@
     </section> <!-- end of portfolio section -->
 
     
-    <section class="section-sm bg-primary">
+    <section class="section-sm bg-primary" data-aos="fade">
         <!-- container -->
         <div class="container text-center text-sm-left">
             <!-- row -->
             <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0" data-aos="fade">
+                <div class="col-sm offset-md-1 mb-1 mb-md-0" >
                     <h6 class="title text-light" >Want to work with me?</h6>
                     <p class="m-0 text-light">Always feel free to Contact & Hire me</p>
                 </div>
-                <div class="col-sm offset-sm-2 offset-md-4">
+                <div class="col-sm offset-sm-5 offset-md-4">
                     <a href="https://www.linkedin.com/in/beakonumberone" target="_blank">
-                        <button class="btn btn-lg my-font btn-light rounded" data-aos="fade">Hire Me</button>
+                        <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
                     </a>
                 </div>
             </div> <!-- end of row -->
@@ -213,27 +213,7 @@
     <script src="assets/js/animateonscroll.js"></script>
     <script src="assets/js/form-handler.js"> </script>
     <!-- PhotoSwipe template -->
-<div id="pswp-container"></div>
-
-<script type="module">
-    import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.7/dist/photoswipe.esm.js';
-    
-    // Set up the on-site viewer for your Re:Zero screenshot
-    document.getElementById('rezero-screenshot').addEventListener('click', function() {
-      
-      // Open the on-site viewer with your 4K image
-      const pswp = new PhotoSwipe({
-        dataSource: [{
-          src: 'assets/imgs/Screenshot 2025-05-09 131048.png',
-          width: 3840,  // Width of your 4K image
-          height: 2160, // Height of your 4K image
-          alt: 'Re:Zero Media Player'
-        }],
-        appendToEl: document.getElementById('pswp-container'),
-        showHideAnimationType: 'zoom',
-      });
-      pswp.init();
-    });
-  </script>
+    <div id="pswp-container"></div>
+    <script type="module" src="assets/js/PhotoSwipe.js"></script>
 </body> 
 </html>
