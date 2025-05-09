@@ -46,3 +46,81 @@ html {
         -ms-flex-preferred-size: 0;
             flex-basis: 0;
   }
+
+  /* Portfolio */
+  .portfolio-card-horizontal {
+    background: #fff;
+    border-radius: .25rem;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.05), 0 4px 5px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-card-horizontal:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1), 0 8px 10px rgba(0,0,0,0.12);
+}
+
+.portfolio-horizontal-img {
+    width: 100%;
+    height: auto; /* Or set a fixed height and use object-fit: cover; */
+    display: block;
+}
+
+.portfolio-horizontal-content {
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio-horizontal-content .portfolio-title {
+    font-size: 1.5rem; /* Meyawo uses h4 for card titles */
+    font-weight: 600; /* from Meyawo's .section-title */
+    margin-bottom: 0.5rem;
+    color: #444; /* from Meyawo's .section-title */
+}
+
+.portfolio-horizontal-content .category-text {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.portfolio-horizontal-content .project-description-short {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555; /* from Meyawo's p */
+}
+
+.tech-tags .badge {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+.portfolio-buttons .btn {
+    /* Adjust button styling if needed */
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .portfolio-horizontal-content {
+        text-align: center; /* Center text on smaller screens */
+    }
+    .portfolio-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-left: 0 !important;
+    }
+    .portfolio-buttons .btn:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* ...existing code... */
