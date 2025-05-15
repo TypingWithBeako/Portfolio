@@ -105,6 +105,7 @@ html {
     /* Adjust button styling if needed */
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+    border-radius: 0.25rem !important;
 }
 
 /* Responsive adjustments */
@@ -115,7 +116,6 @@ html {
     .portfolio-buttons .btn {
         display: block;
         width: 100%;
-        margin-bottom: 10px !important;
         margin-left: 0 !important;
     }
     .portfolio-buttons .btn:last-child {
@@ -193,4 +193,8 @@ body:not(.affix-active) .custom-navbar:not(.affix) .nav .item .link:hover {
 .custom-navbar.affix .nav .item .link.active::after {
   background-color: #695aa6 !important;
 }
+}
+
+#contact {
+  padding: 90px 10px !important; 
 }
